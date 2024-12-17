@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Push , Pop and Join In Js</title>
+</head>
+<body>
+    
+
+    <h1>Push , Pop and Join</h1>
+    <p id="result1"></p>
+    <p id="result2"></p>
+    <p id="result3"></p>
+    <p id="result4"></p>
+
+
+    <script>
+        var fruits = ["Mango", "Banana", "Grapes" , " Dragon Fruit"]
+
+        document.getElementById('result1').innerHTML = "Original List:  " + fruits
+
+        document.getElementById('result2').innerHTML = "Array With Join:  " + fruits.join("*")
+        fruits.pop()
+        document.getElementById('result3').innerHTML = "Array With Pop :  " + fruits
+
+        fruits.push("Apple")
+        document.getElementById('result4').innerHTML = "Array With Push :  " + fruits
+    </script>
+</body>
+</html>
